@@ -1,0 +1,31 @@
+# To Do list
+
+This repo has the purpose to create a guide to understand the key concepts and best practices of React development.
+
+Future work need to add to JavaVsKotlin.md ([☑️]:completed, [-]:in progress):
+
+- Write the first entry for README.md for the get started concepts ☑️
+- write the guides (.md files) for **Core React topics**
+
+  - Hooks (useState, useEffect, useContext)
+  - Events
+  - Conditional rendering & lists
+  - Styling options (CSS Modules, styled-components, Tailwind)
+  - Routing (React Router)
+  - Forms (controlled & uncontrolled)
+
+- write the guides (.md files) for **Advanced topics**
+
+  - Advanced hooks (useReducer, useCallback, useMemo)
+  - State management (Context, Redux, Zustand)
+  - API consumption (fetch, axios)
+  - Patterns & best practices
+  - Testing (Jest, React Testing Library)
+  - Performance (code splitting, lazy loading)
+  - TypeScript with React
+
+- write the guides (.md files) for **Tools & ecosystem**
+  - Node.js & npm / yarn / pnpm
+  - Project starters (Vite, Create React App, Next.js)
+  - Git & GitHub
+  - ESLint & Prettier
