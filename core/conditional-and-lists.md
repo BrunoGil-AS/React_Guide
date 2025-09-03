@@ -54,7 +54,14 @@ function UserDashboard({ user, isLoading, error }) {
 }
 ```
 
-In this example, it shows how to use different conditional rendering patterns based on the user's state. If the user is loading, it displays a loading message. If there's an error, it shows the error message. Otherwise, it renders the user information depending on their role.
+> In this example, it shows how to use different conditional rendering patterns based on the user's state. If the user is loading, it displays a loading message. If there's an error, it shows the error message. Otherwise, it renders the user information depending on their role.
+>
+> The UserDashboard example demonstrates various conditional rendering patterns:
+>
+> - Early returns for loading/error states
+> - Ternary operator for simple either/or cases
+> - Logical AND for optional elements
+> - IIFE for complex conditional logic
 
 ### 2. List Rendering with Proper Keys
 
@@ -89,23 +96,14 @@ function TodoList({ todos, onToggle, onDelete }) {
 }
 ```
 
-For this code snippet, it shows how to use the `map()` function to render a list of todos, each with its own checkbox and delete button.
-
-## Explanation of Examples
-
-The UserDashboard example demonstrates various conditional rendering patterns:
-
-- Early returns for loading/error states
-- Ternary operator for simple either/or cases
-- Logical AND for optional elements
-- IIFE for complex conditional logic
-
-The TodoList example shows proper list rendering with:
-
-- Empty state handling
-- Stable keys using unique IDs
-- Proper event handling for each item
-- Conditional styling based on item state
+> For this code snippet, it shows how to use the `map()` function to render a list of todos, each with its own checkbox and delete button.
+>
+> The TodoList example shows proper list rendering with:
+>
+> - Empty state handling
+> - Stable keys using unique IDs
+> - Proper event handling for each item
+> - Conditional styling based on item state
 
 ## Common Pitfalls & Solutions
 
@@ -125,10 +123,3 @@ The TodoList example shows proper list rendering with:
 2. **Stable Keys Fix**
    - Task: Debug a list that re-renders incorrectly when items are reordered using array indices as keys.
    - Expected Solution: Modify the data structure to include unique IDs and use those as keys instead of indices.
-
-## Further Reading
-
-- [Conditional Rendering in React](https://reactjs.org/docs/conditional-rendering.html)
-- [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
-- [Understanding React's Key Prop](https://kentcdodds.com/blog/understanding-reacts-key-prop)
-- [React Reconciliation](https://reactjs.org/docs/reconciliation.html)

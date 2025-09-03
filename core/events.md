@@ -42,7 +42,7 @@ function ActionButton({ item, onAction }) {
 }
 ```
 
-In this sample, we demonstrate how to handle click events with parameters in a button component.
+> The `ActionButton` example demonstrates handling click events with both direct handler functions and inline arrow functions. It shows how to access event properties and pass additional parameters to parent components.
 
 ### 2. Form Submission with Controlled Inputs
 
@@ -90,13 +90,7 @@ function LoginForm({ onSubmit }) {
 }
 ```
 
-In this example, we demonstrate how to handle click events with parameters in a button component.
-
-## Explanation of Examples
-
-The ActionButton example demonstrates handling click events with both direct handler functions and inline arrow functions. It shows how to access event properties and pass additional parameters to parent components.
-
-The LoginForm example showcases form handling with controlled inputs. It prevents default form submission, manages form state with useState, and demonstrates a reusable change handler for multiple inputs.
+> The LoginForm example showcases form handling with controlled inputs. It prevents default form submission, manages form state with useState, and demonstrates a reusable change handler for multiple inputs.
 
 ## Common Pitfalls & Solutions
 
@@ -116,9 +110,3 @@ The LoginForm example showcases form handling with controlled inputs. It prevent
 2. **Toggle Button**
    - Task: Create a button that toggles a "dark" class on a parent div when clicked.
    - Expected Solution: Use useState for toggle state, and apply/remove the class based on the state.
-
-## Further Reading
-
-- [React Synthetic Events](https://reactjs.org/docs/events.html)
-- [Handling Events in React](https://beta.reactjs.org/learn/responding-to-events)
-- [React Event System Deep Dive](https://www.youtube.com/watch?v=dRo_egw7tBc)

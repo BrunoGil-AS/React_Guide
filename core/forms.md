@@ -251,28 +251,6 @@ function FileUploadForm() {
 > - Includes basic error handling and loading states
 > - Implements conditional rendering for the image preview
 
-## Explanation of Examples
-
-The controlled form example demonstrates complete form control with validation. It shows how to:
-
-- Manage form state with useState
-- Handle changes for multiple inputs
-- Implement validation logic
-- Display error messages
-- Process form submission
-
-The uncontrolled form example shows a simpler approach using refs. It's useful when you:
-
-- Don't need immediate validation
-- Want to reduce re-renders
-- Are integrating with non-React code
-
-The file upload example illustrates handling file inputs and previews, demonstrating:
-
-- File selection handling
-- Image preview generation
-- FormData usage for uploads
-
 ## Common Pitfalls & Solutions
 
 - **Unnecessary Re-renders**: Use controlled components only when needed
@@ -291,12 +269,5 @@ The file upload example illustrates handling file inputs and previews, demonstra
 2. **React Hook Form Migration**
    - Task: Convert the signup form to use React Hook Form
    - Expected Solution: Install react-hook-form, use useForm hook, register inputs, and implement the same validation rules with less code
-
-## Further Reading
-
-- [React Forms Documentation](https://reactjs.org/docs/forms.html)
-- [React Hook Form Documentation](https://react-hook-form.com/)
-- [Form Validation in React](https://www.smashingmagazine.com/2020/10/react-validation-formik-yup/)
-- [Uncontrolled Components](https://reactjs.org/docs/uncontrolled-components.html)
 
 ---

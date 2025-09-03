@@ -41,6 +41,8 @@ function Counter({ initialCount = 0 }) {
 }
 ```
 
+> The Counter example demonstrates `useState` with both an `initializer` function and functional updates. The `initializer` function is useful when the initial state is expensive to compute, while functional updates ensure we're always working with the latest state value, especially in rapid succession updates.
+
 ### 2. Data Fetching with useEffect
 
 ```jsx
@@ -89,6 +91,14 @@ function UserProfile({ userId }) {
 }
 ```
 
+> The UserProfile example shows a complete data fetching flow using useEffect. It handles loading states, error boundaries, and proper cleanup to prevent memory leaks from setting state on unmounted components. The dependency array [userId] ensures the effect reruns when the userId prop changes.
+>
+> This example demonstrates a complete data fetching flow using `useEffect`:
+>
+> - Manages loading and error states
+> - Cleans up subscriptions to prevent memory leaks
+> - Uses a dependency array to control when the effect runs
+
 ### 3. Theme Context
 
 ```jsx
@@ -130,13 +140,7 @@ function ThemedButton() {
 }
 ```
 
-## Explanation of Examples
-
-The Counter example demonstrates useState with both an initializer function and functional updates. The initializer function is useful when the initial state is expensive to compute, while functional updates ensure we're always working with the latest state value, especially in rapid succession updates.
-
-The UserProfile example shows a complete data fetching flow using useEffect. It handles loading states, error boundaries, and proper cleanup to prevent memory leaks from setting state on unmounted components. The dependency array [userId] ensures the effect reruns when the userId prop changes.
-
-The Theme Context example illustrates the Provider/Consumer pattern with useContext. It shows how to share state across components without prop drilling, while maintaining type safety and providing an easy way to update shared state.
+> The Theme Context example illustrates the Provider/Consumer pattern with `useContext`. It shows how to share state across components without prop drilling, while maintaining type safety and providing an easy way to update shared state.
 
 ## Common Pitfalls & Solutions
 

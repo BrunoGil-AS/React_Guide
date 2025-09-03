@@ -55,6 +55,8 @@ function Button({ variant = 'primary', children }) {
 }
 ```
 
+> The CSS Modules example demonstrates locally scoped CSS with composition. It shows how to create reusable, modular styles that won't conflict with other components, while maintaining the familiar CSS syntax.
+
 ### 2. Styled Components
 
 ```jsx
@@ -91,6 +93,8 @@ function ArticleCard({ title, content, theme }) {
 }
 ```
 
+> The Styled Components example shows how to create styled elements with dynamic props-based styling. It demonstrates the power of CSS-in-JS with template literals and component-based styling logic.
+
 ### 3. Tailwind CSS
 
 ```jsx
@@ -119,13 +123,7 @@ function ProductCard({ product }) {
 }
 ```
 
-## Explanation of Examples
-
-The CSS Modules example demonstrates locally scoped CSS with composition. It shows how to create reusable, modular styles that won't conflict with other components, while maintaining the familiar CSS syntax.
-
-The Styled Components example shows how to create styled elements with dynamic props-based styling. It demonstrates the power of CSS-in-JS with template literals and component-based styling logic.
-
-The Tailwind example illustrates utility-first CSS, where styles are composed through class names. It shows how to build complex layouts and responsive designs without writing custom CSS.
+> The Tailwind example illustrates utility-first CSS, where styles are composed through class names. It shows how to build complex layouts and responsive designs without writing custom CSS.
 
 ## Common Pitfalls & Solutions
 

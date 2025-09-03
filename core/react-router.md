@@ -46,6 +46,8 @@ function App() {
 }
 ```
 
+> The basic route setup demonstrates the fundamental Router components and how to create a simple navigation structure. The `*` path catches any unmatched routes for 404 handling.
+
 ### 2. Programmatic Navigation
 
 ```jsx
@@ -72,6 +74,8 @@ function LoginForm() {
   return <form onSubmit={handleSubmit}>{/* form fields */}</form>;
 }
 ```
+
+> The programmatic navigation example shows how to use the `useNavigate` hook for navigation after form submissions or other events, providing a way to move between routes from within your component logic.
 
 ### 3. Nested Routes with Layout
 
@@ -113,13 +117,7 @@ function App() {
 }
 ```
 
-## Explanation of Examples
-
-The basic route setup demonstrates the fundamental Router components and how to create a simple navigation structure. The `*` path catches any unmatched routes for 404 handling.
-
-The programmatic navigation example shows how to use the `useNavigate` hook for navigation after form submissions or other events, providing a way to move between routes from within your component logic.
-
-The nested routes example illustrates how to create a shared layout with the Outlet component, allowing child routes to render within a parent layout while maintaining their own content.
+> The nested routes example illustrates how to create a shared layout with the Outlet component, allowing child routes to render within a parent layout while maintaining their own content.
 
 ## Common Pitfalls & Solutions
 
