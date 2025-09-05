@@ -25,7 +25,20 @@ Future work need to add to JavaVsKotlin.md ([☑️]:completed, [-]:in progress)
   - TypeScript with React
 
 - write the guides (.md files) for **Tools & ecosystem**
+
   - Node.js & npm / yarn / pnpm
   - Project starters (Vite, Create React App, Next.js)
   - Git & GitHub
   - ESLint & Prettier
+
+- Feedback:
+  - Relate the topic of hooks with selector
+  - version of React
+  - Best practices in React Events.
+  - Event Pooling
+  - Callback function, listener
+  - Async call, promise, future and similar CompleteFuture and how it works.
+  - formal definition of component (glosario)
+  - inheritance, Exception and Error Handling, Factory Constructor, OOPS
+  - Mixin, props, action
+  - Over react
