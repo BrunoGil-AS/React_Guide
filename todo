@@ -14,7 +14,7 @@ Future work need to add to JavaVsKotlin.md ([☑️]:completed, [-]:in progress)
   - Routing (React Router)
   - Forms (controlled & uncontrolled)
 
-- write the guides (.md files) for **Advanced topics**
+- write the guides (.md files) for **Advanced topics** ☑️
 
   - Advanced hooks (useReducer, useCallback, useMemo)
   - State management (Context, Redux, Zustand)
@@ -31,14 +31,26 @@ Future work need to add to JavaVsKotlin.md ([☑️]:completed, [-]:in progress)
   - Git & GitHub
   - ESLint & Prettier
 
-- Feedback:
-  - Relate the topic of hooks with selector
-  - version of React
-  - Best practices in React Events.
-  - Event Pooling
-  - Callback function, listener
+- Feedback (09-05-2025):
+
+  - Relate the topic of hooks with selector ☑️
+  - version of React ☑️
+  - Best practices in React Events. ☑️
+  - Event Pooling ☑️
+  - Callback function, listener ☑️
   - Async call, promise, future and similar CompleteFuture and how it works.
   - formal definition of component (glosario)
   - inheritance, Exception and Error Handling, Factory Constructor, OOPS
   - Mixin, props, action
   - Over react
+
+- Feedback (09-09-2025):
+  - What is state?
+  - Store in React
+  - action|Listener
+  - AppContext
+  - Component
+  - API
+  - Service
+  - Router
+  - Redux

@@ -120,6 +120,16 @@ function Counter({ initial }) {
 
 ## Further Reading
 
+### Miscellaneous
+
+- [`React Versions`](./misc/versions-react.md)
+- [Hooks and Selectors](./advanced/advanced-hooks.md#hooks-vs-selectors-and-their-relationship-to-redux)
+- [`Best practices in React Events`](./core/events.md#3-best-practices-in-react-events)
+
+#### JavaScript Related Topics
+
+- [`Callback function and Listener`](./js/functions/listener-callback.md)
+
 ### Core React topics
 
 - [`Hooks (useState, useEffect, useContext)`](./core/hooks.md)

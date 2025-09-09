@@ -149,9 +149,89 @@ Expected result: A shopping cart component that manages items, total, and shippi
 Task: Fix a parent-child component where the child re-renders unnecessarily when receiving a function prop.
 Expected result: Use `useCallback` and `React.memo` to prevent child re-renders when only the parent's local state changes.
 
-## Further Reading
+## Hooks vs Selectors (and their relationship to Redux)
 
-- [useReducer - React Docs](https://react.dev/reference/react/useReducer)
-- [useCallback - React Docs](https://react.dev/reference/react/useCallback)
-- [A Complete Guide to useCallback - Dan Abramov's Blog](https://overreacted.io/a-complete-guide-to-useeffect/)
-- [React Performance Optimization - Kent C. Dodds](https://kentcdodds.com/blog/usememo-and-usecallback)
+### 🔹 Hooks
+
+- **Hooks are a React concept**.
+- A hook is a special function that lets you “hook into” React features (like state, context, or lifecycle) inside functional components.
+- Examples:
+  - `useState` → manage local state
+  - `useEffect` → handle side effects (data fetching, subscriptions, DOM updates)
+  - `useContext` → consume a context
+  - `useReducer` → manage complex state logic
+- You can also write **custom hooks** (`useMyFeature`) to encapsulate reusable logic.
+- Redux and other libraries may provide **their own hooks** (e.g., `useSelector`, `useDispatch`) to integrate with React.
+
+---
+
+### 🔹 Selectors
+
+- **Selectors are not part of React itself**, but a general **pattern**.
+- A selector is a function that extracts a specific piece of state.
+- Benefits:
+  - Decouples components from the full state shape.
+  - Makes refactoring state easier (only selectors need updating, not every component).
+- Example (plain React state):
+
+  ```js
+  const state = { user: { name: "Bruno", age: 25 } };
+
+  const selectUserName = (state) => state.user.name;
+
+  console.log(selectUserName(state)); // "Bruno"
+  ```
+
+---
+
+### 🔹 Hooks + Selectors (Without Redux)
+
+Even without Redux, you can combine hooks and selectors.
+
+```jsx
+// App.jsx
+import { createContext, useContext, useState } from "react";
+
+const AppContext = createContext();
+
+const selectUserName = (state) => state.user.name; // selector
+
+function Profile() {
+  const state = useContext(AppContext); // hook
+  const userName = selectUserName(state); // selector used
+  return <h2>Hello, {userName}</h2>;
+}
+
+export default function App() {
+  const [state] = useState({ user: { name: "Bruno", age: 25 } });
+
+  return (
+    <AppContext.Provider value={state}>
+      <Profile />
+    </AppContext.Provider>
+  );
+}
+```
+
+Here:
+
+- `useContext` → **hook** (how we access the context).
+- `selectUserName` → **selector** (what piece of state we want).
+- No Redux involved.
+
+---
+
+### 🔹 Relationship Summary
+
+- **Hooks** = the _how_ → mechanism in React to access data and logic.
+- **Selectors** = the _what_ → functions that pick the right slice of state.
+- **Redux** often combines them (`useSelector(selector)`), but the pattern also applies with:
+
+  - React Context
+  - Zustand
+  - Jotai
+  - Or even plain React state.
+
+✅ In short: _Hooks are React’s tool, selectors are a pattern. Redux just happens to use both a lot, but they’re not tied to Redux._
+
+---
