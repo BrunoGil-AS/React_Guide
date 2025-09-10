@@ -31,18 +31,18 @@ Future work need to add to JavaVsKotlin.md ([☑️]:completed, [-]:in progress)
   - Git & GitHub
   - ESLint & Prettier
 
-- Feedback (09-05-2025):
+- Feedback (09-05-2025): ☑️
 
-  - Relate the topic of hooks with selector ☑️
-  - version of React ☑️
-  - Best practices in React Events. ☑️
-  - Event Pooling ☑️
-  - Callback function, listener ☑️
+  - Relate the topic of hooks with selector
+  - version of React
+  - Best practices in React Events.
+  - Event Pooling
+  - Callback function, listener
   - Async call, promise, future and similar CompleteFuture and how it works.
-  - formal definition of component (glosario)
+  - formal definition of component
   - inheritance, Exception and Error Handling, Factory Constructor, OOPS
-  - Mixin, props, action
-  - Over react
+  - Mixin, action
+  - Over react (does not exists.)
 
 - Feedback (09-09-2025):
   - What is state?

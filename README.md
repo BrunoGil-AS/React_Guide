@@ -46,7 +46,15 @@ function Card({ title, children }) {
 
 ## Components
 
-Components are the building blocks of a React app. They are reusable, composable pieces that return UI.
+**_Definition:_**
+
+Components are the building blocks of a React application. They are reusable pieces of UI that can be functional (functions) or class-based (ES6 classes). In modern React, functional components with hooks are preferred.
+
+**_When & Why to Use:_**
+
+- Break your UI into smaller, reusable pieces.
+- Improve readability and maintainability.
+- Separate logic from presentation.
 
 ### Functional components (recommended)
 
@@ -90,18 +98,62 @@ export default Greeting;
 
 ### Props (component inputs)
 
+**_Definition:_**
+
+Props are inputs to components. They allow you to pass data from a parent component to a child component. Props are read-only inside the child component.
+
 - Props are read-only values passed from parent to child.
 - Encourage small, focused components that receive data and callbacks via props.
 
-```jsx
-// Parent
-<Counter initial={5} />;
+**_When & Why to Use:_**
 
-// Child receives `initial` via props
-function Counter({ initial }) {
-  /* ... */
+- To customize or configure a component without hardcoding data.
+- To make components reusable with different data.
+- To maintain unidirectional data flow (top-down).
+
+```jsx
+// Greeting.jsx
+import React from "react";
+
+function Greeting({ name, age }) {
+  // Destructure props directly in the parameter
+  return (
+    <div>
+      <h2>Hello, {name}!</h2>
+      <p>You are {age} years old.</p>
+    </div>
+  );
 }
+
+export default Greeting;
 ```
+
+_Using Props in Parent Component:_
+
+```jsx
+// App.jsx
+import React from "react";
+import Greeting from "./Greeting";
+
+function App() {
+  return (
+    <div>
+      <Greeting name="Bruno" age={26} />
+      <Greeting name="Alice" age={30} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+> **_Notes & Best Practices:_**
+>
+> - Props are read-only:
+>   - Child components should not modify them.
+>   - If you need to change them, lift state up.
+> - Destructuring props in the function parameter is cleaner than props.name inside the function.
+> - Default props: You can set default values if a prop isn’t provided:
 
 ### State (basic with `useState`)
 
@@ -129,6 +181,8 @@ function Counter({ initial }) {
 #### JavaScript Related Topics
 
 - [`Callback function and Listener`](./js/functions/listener-callback.md)
+- [`Event Loop`](./js/event-loop.md)
+- [`What is Axios?`](./js/misc/what-is-axios.md)
 
 ### Core React topics
 
