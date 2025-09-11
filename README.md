@@ -155,8 +155,21 @@ export default App;
 > - Destructuring props in the function parameter is cleaner than props.name inside the function.
 > - Default props: You can set default values if a prop isn’t provided:
 
-### State (basic with `useState`)
+### State
 
+**_Definition:_**
+
+In React, state is a built-in object that stores data that can change over time in a component. It represents the “current snapshot” of your component’s data that influences what gets rendered.
+
+- State is local to a component (unless shared via context or other state management).
+- When state changes, React re-renders the component automatically to reflect the new data.
+
+**_Analogy:_**
+Think of state like the “memory” of your component. For example, a counter remembers its current number, a form remembers what the user typed, or a toggle remembers if it’s on/off.
+
+**_When & Why to Use:_**
+
+- Use state for data that changes over time and affects rendering.
 - `useState` returns a state value and a setter function: `[state, setState]`.
 - Keep state minimal and lift it up to a common parent when multiple components must share it.
 
