@@ -11,8 +11,8 @@ Since React 16.8, hooks have become the standard way to write React components, 
 ## Key Concepts
 
 - **useState**: Adds state management to functional components. Returns a stateful value and a setter function.
-- **useEffect**: Handles side effects in components (data fetching, subscriptions, DOM mutations).
-- **useContext**: Subscribes to React context without introducing nesting.
+- [`useEffect`](./hooks/useEffect.md): Handles side effects in components (data fetching, subscriptions, DOM mutations).
+- [`useContext`](./hooks/useContext.md): Subscribes to React context without introducing nesting.
 - **Dependencies**: Arrays passed to hooks that control when effects run or values update.
 - **Cleanup Functions**: Optional returns from effects that prevent memory leaks and clean up resources.
 
