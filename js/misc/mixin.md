@@ -43,7 +43,7 @@ var MyComponent = React.createClass({
 });
 ```
 
-### Problems with Mixins:
+### Problems with Mixins
 
 - **Name collisions**: Two mixins defining the same method would overwrite each other.
 - **Hidden dependencies**: It’s hard to know what methods or state a mixin expects.

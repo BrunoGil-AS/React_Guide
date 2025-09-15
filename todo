@@ -45,12 +45,13 @@ Future work need to add to JavaVsKotlin.md ([☑️]:completed, [-]:in progress)
   - Over react (does not exists.)
 
 - Feedback (09-09-2025):
-  - What is state?
-  - Store in React
-  - action|Listener
-  - AppContext
-  - Component
-  - API
-  - Service
-  - Router
-  - Redux
+
+  - What is state? ☑️
+  - Store in React ☑️
+  - action|Listener ☑️
+  - AppContext ☑️
+  - Component ☑️
+  - APIs ☑️
+  - Service ?
+  - Router ☑️
+  - Redux (partially done) ☑️

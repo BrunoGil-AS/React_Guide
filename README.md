@@ -188,14 +188,16 @@ Think of state like the “memory” of your component. For example, a counter r
 ### Miscellaneous
 
 - [`React Versions`](./misc/versions-react.md)
-- [Hooks and Selectors](./advanced/advanced-hooks.md#hooks-vs-selectors-and-their-relationship-to-redux)
+- [`Hooks and Selectors`](./advanced/advanced-hooks.md#hooks-vs-selectors-and-their-relationship-to-redux)
 - [`Best practices in React Events`](./core/events.md#3-best-practices-in-react-events)
+- [`OOP in React`](./js/misc/OOP.md)
 
 #### JavaScript Related Topics
 
 - [`Callback function and Listener`](./js/functions/listener-callback.md)
 - [`Event Loop`](./js/event-loop.md)
 - [`What is Axios?`](./js/misc/what-is-axios.md)
+- [`What is a Mixin?`](./js/misc/mixin.md)
 
 ### Core React topics
 
@@ -205,6 +207,7 @@ Think of state like the “memory” of your component. For example, a counter r
 - [`Styling options (CSS Modules, styled-components, Tailwind)`](./core/styling.md)
 - [`Routing (React Router)`](./core/react-router.md)
 - [`Forms (controlled & uncontrolled)`](./core/forms.md)
+- [`Storage Management (localStorage, sessionStorage, cookies)`](./core/storage.md)
 
 ### Advanced topics
 
@@ -215,6 +218,9 @@ Think of state like the “memory” of your component. For example, a counter r
 - [`Testing (Jest, React Testing Library)`](./advanced/testing.md)
 - [`Performance (code splitting, lazy loading)`](./advanced/performance.md)
 - [`TypeScript with React`](./advanced/typescript.md)
+- [`Exception and Error Handling`](./advanced/exception-error-handling.md)
+- [`Actions`](./advanced/actions.md)
+- [`React APIs`](./advanced/react-apis.md)
 
 ### Tools & ecosystem
 
@@ -222,5 +228,6 @@ Think of state like the “memory” of your component. For example, a counter r
 - [`Project starters (Vite, Create React App, Next.js)`](./tools/starters.md)
 - [`Git & GitHub`](./tools/git.md)
 - [`ESLint & Prettier`](./tools/linting.md)
+- [`Redux`](./tools/redux.md)
 
 ---
